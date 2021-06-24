@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hogwarts.Data\Hogwarts.Data.csproj" />
+    <ProjectReference Include="..\Hogwarts.Domain\Hogwarts.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

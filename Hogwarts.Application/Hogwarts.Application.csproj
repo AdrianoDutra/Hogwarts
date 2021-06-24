@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hogwarts.CrossCutting\Hogwarts.CrossCutting.csproj" />
+    <ProjectReference Include="..\Hogwarts.Domain\Hogwarts.Domain.csproj" />
+    <ProjectReference Include="..\Hogwarts.Service\Hogwarts.Service.csproj" />
+  </ItemGroup>
+
+</Project>
