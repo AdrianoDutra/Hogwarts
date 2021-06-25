@@ -32,7 +32,12 @@ namespace Hogwarts
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-          
+            if (_environment.IsEnvironment("Testing"))
+            {
+                Environment.SetEnvironmentVariable("CONNECTION", "Server=.;Initial Catalog=dbhogwarts;MultipleActiveResultSets=true;User ID=UserPotter;Password=Teste@159");
+                Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
+            }
+
             ConfigureService.ConfigureDependenciesService(services);
             ConfigureRepository.ConfigureDependenciesRepository(services);
             services.AddControllers();

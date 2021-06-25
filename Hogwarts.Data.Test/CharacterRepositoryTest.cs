@@ -18,8 +18,8 @@ namespace Hogwarts.Data.Test
             _serviceProvide = dbTeste.ServiceProvider;
         }
 
-        [Fact(DisplayName = "CRUD de Personagem (Character)")]
-        [Trait("CRUD", "CharacterEntity")]
+        [Fact(DisplayName = "(Character)")]
+        [Trait("CRUD", "Characters")]
         public async Task Test_CRUD_Character()
         {
             using (var context = _serviceProvide.GetService<MyContext>())
