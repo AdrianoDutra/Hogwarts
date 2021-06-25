@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hogwarts.Domain", "Hogwarts
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hogwarts.Service", "Hogwarts.Service\Hogwarts.Service.csproj", "{BCABCE38-2AE4-4FE7-B551-F9E79C15BFE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogwarts.CrossCutting", "Hogwarts.CrossCutting\Hogwarts.CrossCutting.csproj", "{D8DBF8DD-ECE7-45DD-9CBD-1C34536C78B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hogwarts.CrossCutting", "Hogwarts.CrossCutting\Hogwarts.CrossCutting.csproj", "{D8DBF8DD-ECE7-45DD-9CBD-1C34536C78B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogwarts.Data.Test", "Hogwarts.Data.Test\Hogwarts.Data.Test.csproj", "{2D4D8AAA-94C9-426A-852A-E0CA5A6EFAE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogwarts.Service.Test", "Hogwarts.Service.Test\Hogwarts.Service.Test.csproj", "{4855EB1C-48E2-4385-95A3-E5F259E55D51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogwarts.Application.Test", "Hogwarts.Application.Test\Hogwarts.Application.Test.csproj", "{8AC9B245-7AD1-40EF-8A9F-D435C729A072}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{D8DBF8DD-ECE7-45DD-9CBD-1C34536C78B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8DBF8DD-ECE7-45DD-9CBD-1C34536C78B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8DBF8DD-ECE7-45DD-9CBD-1C34536C78B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4D8AAA-94C9-426A-852A-E0CA5A6EFAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4D8AAA-94C9-426A-852A-E0CA5A6EFAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4D8AAA-94C9-426A-852A-E0CA5A6EFAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4D8AAA-94C9-426A-852A-E0CA5A6EFAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4855EB1C-48E2-4385-95A3-E5F259E55D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4855EB1C-48E2-4385-95A3-E5F259E55D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4855EB1C-48E2-4385-95A3-E5F259E55D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4855EB1C-48E2-4385-95A3-E5F259E55D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC9B245-7AD1-40EF-8A9F-D435C729A072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC9B245-7AD1-40EF-8A9F-D435C729A072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC9B245-7AD1-40EF-8A9F-D435C729A072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC9B245-7AD1-40EF-8A9F-D435C729A072}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

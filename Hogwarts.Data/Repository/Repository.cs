@@ -21,9 +21,9 @@ namespace Hogwarts.Data.Repository
         {
             try
             {
-                if (item.Id == Guid.Empty)
+                if (item.id == Guid.Empty)
                 {
-                    item.Id = Guid.NewGuid();
+                    item.id = Guid.NewGuid();
                 }
                 _dbSet.Add(item);
                 await _myContext.SaveChangesAsync();
@@ -38,7 +38,7 @@ namespace Hogwarts.Data.Repository
         {
             try
             {
-                var result = await _dbSet.SingleOrDefaultAsync(p => p.Id.Equals(item.Id));
+                var result = await _dbSet.SingleOrDefaultAsync(p => p.id.Equals(item.id));
                 if (result == null)
                 {
                     return null;
@@ -58,7 +58,7 @@ namespace Hogwarts.Data.Repository
         {
             try
             {
-                var result = await _dbSet.SingleOrDefaultAsync(p => p.Id.Equals(id));
+                var result = await _dbSet.SingleOrDefaultAsync(p => p.id.Equals(id));
                 if (result == null)
                 {
                     return false;
@@ -75,14 +75,14 @@ namespace Hogwarts.Data.Repository
 
         public async Task<bool> ExistAsync(Guid id)
         {
-            return await _dbSet.AnyAsync(p => p.Id.Equals(id));
+            return await _dbSet.AnyAsync(p => p.id.Equals(id));
         }
           
         public async Task<T> SelectAsync(Guid id)
         {
             try
             {
-                return await _dbSet.SingleOrDefaultAsync(p => p.Id.Equals(id));
+                return await _dbSet.SingleOrDefaultAsync(p => p.id.Equals(id));
             }
             catch 
             {

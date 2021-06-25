@@ -8,7 +8,7 @@ namespace Hogwarts.Domain.Dtos
 {
     public class CharacterResultDto
     {
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
        
         public string name { get; set; }
 

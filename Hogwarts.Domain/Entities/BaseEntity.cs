@@ -6,6 +6,6 @@ namespace Hogwarts.Domain.Entities
     public abstract class BaseEntity
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
     }
 }

@@ -63,7 +63,7 @@ namespace Api.Application.Controllers
                 var result = await _service.Post(character);
                 if (result != null)
                 {
-                    return Created(new Uri(Url.Link("GetWithId", new { id = result.Id })), result);
+                    return Created(new Uri(Url.Link("GetWithId", new { id = result.id })), result);
                 }
                 else
                 {

@@ -10,7 +10,7 @@ namespace Hogwarts.Data.Mapping
         {
             builder.ToTable("Character");
 
-            builder.HasKey(p => p.Id);
+            builder.HasKey(p => p.id);
 
             builder.Property(p => p.name)
                    .IsRequired()

@@ -11,7 +11,7 @@ namespace Hogwarts.Domain.Dtos
     {
 
         [Required(ErrorMessage = "Id é um campo obrigatório!")]
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
 
         [Required(ErrorMessage = "Name é um campo obrigatório!")]
         [StringLength(100, ErrorMessage = "Name deve ter no máximo {1} caracteres.")]
