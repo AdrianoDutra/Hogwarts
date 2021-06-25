@@ -6,7 +6,7 @@ using System;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Api.Application.Controllers
+namespace Hogwarts.Application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -77,7 +77,7 @@ namespace Api.Application.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] CharacterUpdateDto user)
+        public async Task<ActionResult> Put([FromBody] CharacterUpdateDto character)
         {
             if (!ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace Api.Application.Controllers
             }
             try
             {
-                var result = await _service.Put(user);
+                var result = await _service.Put(character);
                 if (result != null)
                 {
                     return Ok(result);
@@ -101,7 +101,7 @@ namespace Api.Application.Controllers
             }
         }
         [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             if (!ModelState.IsValid)
             {
